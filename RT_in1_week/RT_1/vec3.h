@@ -1,8 +1,6 @@
 #ifndef VEC3_H
 #define VEC3_H
 
-#include <cmath>
-#include <iostream>
 
 class Vec3{
     public:
@@ -17,7 +15,7 @@ class Vec3{
 
         Vec3 operator- () const { return Vec3(-e[0], -e[1], -e[2]); }
         double operator[](int i) const { return e[i]; }
-        double& operator[](int i) { return e[1]; }
+        double& operator[](int i) { return e[i]; }
 
         Vec3& operator+=(const Vec3& v){
             e[0]+= v.e[0];
